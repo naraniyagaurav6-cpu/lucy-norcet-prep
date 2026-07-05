@@ -892,6 +892,7 @@ explanation:"A postpartum IUCD (Copper-T), when clinically appropriate, is an ef
   answer: 0,
   explanation: "Endometritis commonly presents with fever, uterine tenderness, and foul-smelling lochia."
 },
+
 {
   question: "A laboring woman suddenly complains of severe chest pain and becomes hypotensive. Which emergency should the nurse suspect?",
   options: [
