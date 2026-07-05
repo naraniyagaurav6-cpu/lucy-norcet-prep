@@ -1,62 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lucy NORCET Prep V2</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucy NORCET Prep</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="container">
+    <div class="container">
 
-<div id="home" class="home">
+        <div id="home" class="home">
+            <div class="welcome-card">
+                <h1>🩺 Lucy NORCET Prep</h1>
+                <h2>Welcome Gaurav 👋</h2>
+                <p>Practice • Learn • Crack NORCET</p>
+            </div>
 
-<h1>🩺 Lucy NORCET Prep</h1>
+            <div class="stats-card">
+                <div class="stat">
+                    <h3>76+</h3>
+                    <p>Questions</p>
+                </div>
+                <div class="stat">
+                    <h3>5</h3>
+                    <p>Subjects</p>
+                </div>
+                <div class="stat">
+                    <h3>Free</h3>
+                    <p>Access</p>
+                </div>
+            </div>
 
-<p class="subtitle">Founder: Gaurav</p>
+            <select id="subject" style="display:none;">
+                <option value="obg">OBG</option>
+                <option value="msn">MSN</option>
+                <option value="chn">CHN</option>
+                <option value="mhn">MHN</option>
+                <option value="child">CHILD</option>
+            </select>
 
-<select id="subject">
-<option value="obg">🩺 OBG Nursing</option>
-<option value="msn">🏥 Medical Surgical Nursing</option>
-<option value="chn">🌍 Community Health Nursing</option>
-<option value="mhn">🧠 Mental Health Nursing</option>
-<option value="child">👶 Child Health Nursing</option>
-</select>
+            <div class="subject-grid">
+                <div class="subject-card" onclick="selectSubject('obg')">
+                    <h2>🩺</h2>
+                    <h3>OBG Nursing</h3>
+                    <p>76+ Questions</p>
+                </div>
+                <div class="subject-card" onclick="selectSubject('msn')">
+                    <h2>🏥</h2>
+                    <h3>Medical Surgical</h3>
+                    <p>Coming Soon</p>
+                </div>
+                <div class="subject-card" onclick="selectSubject('chn')">
+                    <h2>🌍</h2>
+                    <h3>Community Health</h3>
+                    <p>Coming Soon</p>
+                </div>
+                <div class="subject-card" onclick="selectSubject('mhn')">
+                    <h2>🧠</h2>
+                    <h3>Mental Health</h3>
+                    <p>Coming Soon</p>
+                </div>
+                <div class="subject-card" onclick="selectSubject('child')">
+                    <h2>👶</h2>
+                    <h3>Child Health</h3>
+                    <p>Coming Soon</p>
+                </div>
+            </div>
+        </div>
 
-<button onclick="startOBG()">
-📚 Start Quiz
-</button>
+        <div id="quizBox" style="display:none;">
+            <div class="progress">
+                <div id="progressBar"></div>
+            </div>
+            <p id="progressText"></p>
+            <h3 id="timer">⏱️ 30s</h3>
+            <h2 id="question"></h2>
+            <div id="options"></div>
+            
+            <button id="bookmarkBtn">
+                ⭐ Bookmark Question
+            </button>
+            <button id="nextBtn">
+                Next →
+            </button>
+            <p id="score">
+                Score : 0
+            </p>
+        </div>
 
-</div>
+        <div id="bookmarkBox" class="hidden" style="display:none;">
+            <div class="welcome-card" style="padding: 15px; margin-bottom: 15px; background: linear-gradient(135deg, #7c3aed, #4f46e5);">
+                <h2>⭐ Bookmarked Questions</h2>
+                <p>Aapke save kiye huye important questions</p>
+            </div>
+            
+            <div id="bookmarksList" class="bookmark-list-container"></div>
+            
+            <button onclick="goBackToHome()" style="background: #4b5563; margin-top: 15px;">
+                🔙 Back to Home
+            </button>
+        </div>
 
-<div id="quizBox" style="display:none;">
+    </div>
 
-<div class="progress">
-<div id="progressBar"></div>
-</div>
+    <div class="bottom-nav">
+        <div class="nav-item active" onclick="goBackToHome()">
+            🏠
+            <span>Home</span>
+        </div>
+        <div class="nav-item">
+            📚
+            <span>Subjects</span>
+        </div>
+        <div class="nav-item" onclick="showBookmarks()">
+            ⭐
+            <span>Bookmarks</span>
+        </div>
+        <div class="nav-item">
+            👤
+            <span>Profile</span>
+        </div>
+    </div>
 
-<p id="progressText">Question 1 / 3</p>
-
-<h3 id="timer">⏱️ 30s</h3>
-
-<h2 id="question"></h2>
-
-<div id="options"></div>
-<button id="bookmarkBtn">
-⭐ Bookmark Question
-</button>
-<button id="nextBtn">Next →</button>
-
-<p id="score">Score : 0</p>
-
-</div>
-
-</div>
-
-<script src="questions.js"></script>
-<script src="script.js"></script>
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
 
 </body>
-</html>
+      </html>
