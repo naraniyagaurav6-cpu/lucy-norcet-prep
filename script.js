@@ -267,4 +267,4 @@ function removeSpecificBookmark(index) {
     localStorage.setItem('lucy_bookmarks', JSON.stringify(bookmarks));
     renderBookmarks(); // List refresh karo
     alert("🗑️ Question removed from bookmarks!");
-}
+        }
