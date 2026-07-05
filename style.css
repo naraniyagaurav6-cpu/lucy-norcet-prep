@@ -1,139 +1,349 @@
+/* ==========================================================================
+   1. BASE STYLES & RESET
+   ========================================================================== */
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body{
-background:linear-gradient(135deg,#2563eb,#7c3aed);
-display:flex;
-justify-content:center;
-align-items:center;
-min-height:100vh;
-padding:20px;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    min-height: 100vh;
+    padding: 20px;
 }
 
 .container{
-width:100%;
-max-width:500px;
-background:#fff;
-padding:25px;
-border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,.2);
-animation:fadeIn .5s ease;
+    max-width: 500px;
+    margin: auto;
+    background: #fff;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.2);
 }
 
-@keyframes fadeIn{
-from{opacity:0;transform:translateY(20px);}
-to{opacity:1;transform:translateY(0);}
+/* ==========================================================================
+   2. DASHBOARD & WELCOME CARDS
+   ========================================================================== */
+.welcome-card{
+    background: linear-gradient(135deg, #2563eb, #4f46e5);
+    color: #fff;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.home{
-text-align:center;
+.welcome-card h1{
+    font-size: 28px;
+    margin-bottom: 10px;
 }
 
-.home h1{
-color:#2563eb;
-margin-bottom:10px;
-font-size:30px;
+.welcome-card h2{
+    font-size: 22px;
+    margin-bottom: 8px;
 }
 
-.subtitle{
-color:#666;
-margin-bottom:20px;
+.welcome-card p{
+    opacity: .9;
 }
 
-select{
-width:100%;
-padding:14px;
-border-radius:12px;
-border:2px solid #2563eb;
-font-size:16px;
-margin-bottom:15px;
-outline:none;
+.stats-card{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
-button{
-width:100%;
-padding:15px;
-margin-top:12px;
-border:none;
-border-radius:12px;
-background:#2563eb;
-color:white;
-font-size:17px;
-cursor:pointer;
-transition:.3s;
+.stat{
+    flex: 1;
+    background: #f8fafc;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,.08);
 }
 
-button:hover{
-background:#1d4ed8;
+.stat h3{
+    color: #2563eb;
+    font-size: 24px;
 }
 
+.stat p{
+    color: #666;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* ==========================================================================
+   3. SUBJECT GRID SYSTEM
+   ========================================================================== */
+.subject-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.subject-card{
+    background: #ffffff;
+    border: 2px solid #e5e7eb;
+    border-radius: 18px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+}
+
+.subject-card:hover{
+    transform: translateY(-5px);
+    border-color: #2563eb;
+    background: #eff6ff;
+}
+
+.subject-card h2{
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.subject-card h3{
+    font-size: 18px;
+    color: #1e293b;
+    margin-bottom: 5px;
+}
+
+.subject-card p{
+    font-size: 14px;
+    color: #64748b;
+}
+
+/* ==========================================================================
+   4. QUIZ UI ELEMENTS (PROGRESS, TIMER, QUESTIONS)
+   ========================================================================== */
 .progress{
-width:100%;
-height:10px;
-background:#ddd;
-border-radius:20px;
-overflow:hidden;
-margin-bottom:10px;
+    width: 100%;
+    height: 10px;
+    background: #e5e7eb;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 10px;
 }
 
 #progressBar{
-width:0%;
-height:100%;
-background:#22c55e;
-transition:.4s;
+    width: 0%;
+    height: 100%;
+    background: #22c55e;
+    transition: .4s;
 }
 
 #progressText{
-text-align:center;
-font-weight:bold;
-margin-bottom:10px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 #timer{
-text-align:center;
-font-size:22px;
-font-weight:bold;
-color:#2563eb;
-margin-bottom:15px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #2563eb;
+    margin-bottom: 15px;
 }
 
 #question{
-font-size:22px;
-margin-bottom:20px;
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #1e293b;
 }
 
+/* ==========================================================================
+   5. OPTIONS SYSTEM & BULLETPROOF CONTRAST FIX
+   ========================================================================== */
 .option{
-display:block;
-width:100%;
-padding:15px;
-margin:10px 0;
-background:#eef2ff;
-color:#000;
-border-radius:10px;
-cursor:pointer;
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    background: #eef2ff !important; /* Premium light blue tint background */
+    color: #1e293b !important;       /* 🟢 Dark Charcoal Text - Shuru me ekdum saaf dikhega */
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s;
+    opacity: 1 !important;          /* Shuru me visibility poori 100% rahegi */
 }
 
 .option:hover{
-background:#dbeafe;
+    background: #dbeafe !important;
 }
 
-.correct{
-background:#22c55e!important;
-color:white!important;
+/* 🟢 JAB ANSWER CLICK HO JAYE: Tab baki ke options halkay gray ho kar disable lagenge */
+.option:disabled {
+    color: #4b5563 !important;      /* Dark Gray text - disable hone ke baad bhi readable rahega */
+    opacity: 0.65 !important;       /* Halka sa fade touch */
+    cursor: not-allowed;
 }
 
-.wrong{
-background:#ef4444!important;
-color:white!important;
+/* Correct select hone par fully bright Green */
+.option.correct{
+    background: #22c55e !important;
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+/* Wrong select hone par fully bright Red */
+.option.wrong{
+    background: #ef4444 !important;
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+/* Correct aur Wrong buttons disable hone par bhi bright white text hold rakhein */
+.option.correct:disabled,
+.option.wrong:disabled {
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+/* ==========================================================================
+   6. GLOBAL BUTTONS & SCORES
+   ========================================================================== */
+button{
+    width: 100%;
+    padding: 15px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 12px;
+    background: #2563eb;
+    color: #fff;
+    font-size: 17px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover{
+    background: #1d4ed8;
 }
 
 #score{
-margin-top:20px;
-font-size:18px;
-font-weight:bold;
-text-align:center;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: #2563eb;
+}
+
+/* ==========================================================================
+   7. BOOKMARK SCREEN INTERFACE
+   ========================================================================== */
+.bookmark-list-container {
+    margin-top: 15px;
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+.bookmark-item {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+}
+
+.bookmark-item p {
+    font-size: 15px;
+    color: #1e293b;
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+
+.bookmark-item .correct-ans {
+    color: #16a34a;
+    font-weight: 600;
+    font-size: 14px;
+    background: #f0fdf4;
+    padding: 6px 10px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.empty-msg {
+    text-align: center;
+    color: #64748b;
+    font-style: italic;
+    padding: 20px 0;
+}
+
+/* ==========================================================================
+   8. NAVIGATION & BOX SPACING
+   ========================================================================== */
+.bottom-nav{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #ffffff;
+    padding: 12px 0;
+    box-shadow: 0 -5px 15px rgba(0,0,0,.12);
+    z-index: 999;
+}
+
+.nav-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 13px;
+    color: #666;
+    cursor: pointer;
+}
+
+.nav-item.active{
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.nav-item span{
+    margin-top: 4px;
+}
+
+#quizBox{
+    padding-bottom: 80px;
+}
+
+/* ==========================================================================
+   9. RESPONSIVE DESIGN (MOBILE FRIENDLY)
+   ========================================================================== */
+@media(max-width:600px){
+    .container{
+        padding: 15px;
+        border-radius: 20px;
+    }
+
+    .subject-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .welcome-card h1{
+        font-size: 24px;
+    }
+
+    .welcome-card h2{
+        font-size: 20px;
+    }
+
+    #question{
+        font-size: 20px;
+    }
 }
