@@ -645,6 +645,156 @@ options:[
 ],
 answer:1,
 explanation:"Severely elevated BP with headache and visual disturbance suggests severe preeclampsia."
-}
-
+},
+,
+{
+question:"Normal fetal heart rate during labour is?",
+options:["80–100 bpm","110–160 bpm","170–200 bpm","200–220 bpm"],
+answer:1,
+explanation:"Normal fetal heart rate during labour is 110–160 bpm."
+},
+{
+question:"The strongest risk factor for postpartum hemorrhage is?",
+options:["Uterine atony","Anemia","Hypertension","Diabetes"],
+answer:0,
+explanation:"Uterine atony is the most common cause of postpartum hemorrhage."
+},
+{
+question:"Which hormone is responsible for milk ejection?",
+options:["Prolactin","Oxytocin","Estrogen","Progesterone"],
+answer:1,
+explanation:"Oxytocin causes milk let-down (milk ejection reflex)."
+},
+{
+question:"Normal newborn heart rate is?",
+options:["60–80/min","80–100/min","120–160/min","180–200/min"],
+answer:2,
+explanation:"Normal heart rate of a healthy newborn is 120–160/min."
+},
+{
+question:"The presenting diameter in a well-flexed vertex presentation is?",
+options:["Occipitofrontal","Suboccipitobregmatic","Mentovertical","Bitemporal"],
+answer:1,
+explanation:"Suboccipitobregmatic (9.5 cm) is the presenting diameter."
+},
+{
+question:"The normal pH of amniotic fluid is?",
+options:["4.5–5.5","6.0–6.5","7.0–7.5","8.0–8.5"],
+answer:2,
+explanation:"Amniotic fluid is slightly alkaline with pH around 7.0–7.5."
+},
+{
+question:"Which drug is used to treat postpartum hemorrhage due to uterine atony?",
+options:["Oxytocin","Diazepam","Heparin","Atropine"],
+answer:0,
+explanation:"Oxytocin is the first-line drug for uterine atony."
+},
+{
+question:"Quickening is usually felt in primigravida at?",
+options:["8 weeks","12 weeks","18–20 weeks","30 weeks"],
+answer:2,
+explanation:"Quickening is usually felt at 18–20 weeks in primigravida."
+},
+{
+question:"The normal weight gain during pregnancy is approximately?",
+options:["2–4 kg","5–7 kg","10–12 kg","18–20 kg"],
+answer:2,
+explanation:"Average recommended weight gain is about 10–12 kg."
+},
+{
+question:"The first stage of labour ends with?",
+options:["Onset of contractions","Full cervical dilatation","Delivery of baby","Placental expulsion"],
+answer:1,
+explanation:"The first stage ends when the cervix is fully dilated."
+},
+{
+question:"Which condition is characterized by hypertension, edema and proteinuria?",
+options:["Eclampsia","Preeclampsia","Placenta previa","Hydramnios"],
+answer:1,
+explanation:"Preeclampsia is characterized by hypertension with proteinuria."
+},
+{
+question:"The average length of the umbilical cord is?",
+options:["20 cm","35 cm","50 cm","80 cm"],
+answer:2,
+explanation:"The average umbilical cord length is about 50 cm."
+},
+{
+question:"Which vitamin should be given to every newborn soon after birth?",
+options:["Vitamin A","Vitamin C","Vitamin D","Vitamin K"],
+answer:3,
+explanation:"Vitamin K prevents hemorrhagic disease of the newborn."
+},
+{
+question:"Normal duration of the second stage of labour in primigravida is?",
+options:["10–20 min","30–60 min","1–2 hours","3–4 hours"],
+answer:2,
+explanation:"It usually lasts up to 2 hours."
+},
+{
+question:"Which investigation confirms fetal presentation most accurately?",
+options:["Abdominal palpation","Ultrasound","X-ray","Urine test"],
+answer:1,
+explanation:"Ultrasound accurately confirms fetal presentation."
+},
+{
+question:"The placenta normally weighs about?",
+options:["250 g","350 g","500 g","700 g"],
+answer:2,
+explanation:"A normal placenta weighs approximately 500 g."
+},
+{
+question:"Which fetal presentation is most common?",
+options:["Breech","Face","Vertex","Shoulder"],
+answer:2,
+explanation:"Vertex presentation is the most common."
+},
+{
+question:"The normal respiratory rate of a newborn is?",
+options:["20–30/min","30–60/min","60–90/min","90–120/min"],
+answer:1,
+explanation:"A healthy newborn breathes 30–60 times per minute."
+},
+{
+question:"Which part of the placenta is maternal?",
+options:["Chorion","Amnion","Decidua basalis","Umbilical cord"],
+answer:2,
+explanation:"Decidua basalis forms the maternal part of the placenta."
+},
+{
+question:"Which pelvic type is best for normal vaginal delivery?",
+options:["Android","Anthropoid","Gynecoid","Platypelloid"],
+answer:2,
+explanation:"Gynecoid pelvis is the most favorable for vaginal birth."
+},
+{
+question:"A newborn with an APGAR score of 8 at 1 minute is considered?",
+options:["Severely depressed","Moderately depressed","In good condition","Requires CPR"],
+answer:2,
+explanation:"An APGAR score of 7–10 indicates the baby is in good condition."
+},
+{
+question:"The normal fetal movement count after 28 weeks should be at least?",
+options:["2/day","5/day","10/day","20/day"],
+answer:2,
+explanation:"At least 10 fetal movements in 12 hours is reassuring."
+},
+{
+question:"Which hormone causes uterine contractions during labour?",
+options:["Progesterone","Oxytocin","Relaxin","hCG"],
+answer:1,
+explanation:"Oxytocin stimulates uterine contractions."
+},
+{
+question:"The commonest indication for induction of labour is?",
+options:["Post-term pregnancy","Twins","Breech","Polyhydramnios"],
+answer:0,
+explanation:"Post-term pregnancy is a common indication for induction."
+},
+{
+question:"The best method to prevent neonatal hypothermia is?",
+options:["Immediate bathing","Skin-to-skin contact","Cold sponging","Keeping windows open"],
+answer:1,
+explanation:"Skin-to-skin contact helps maintain newborn temperature."
+ }
 ];  
