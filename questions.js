@@ -1,5 +1,4 @@
 const questions = [
-
 {
 question:"Normal gestation period is?",
 options:["36 Weeks","38 Weeks","40 Weeks","42 Weeks"],
@@ -255,7 +254,6 @@ options:["1.5 kg","2 kg","3 kg","5 kg"],
 answer:2,
 explanation:"The average birth weight of a healthy term newborn is about 3 kg."
 },
-
 {
 question:"Which of the following is a probable sign of pregnancy?",
 options:[
@@ -297,8 +295,9 @@ options:[
 ],
 answer:1,
 explanation:"TT/Td vaccination starts at the first ANC visit."
-}, 
- {
+},
+
+{
 question:"Fetal heart rate should be counted for?",
 options:[
 "15 seconds",
@@ -403,7 +402,7 @@ options:[
 "Cervical polyp"
 ],
 answer:0,
-explanation:"Placenta previa is a common cause of painless antepartum hemorrhage."
+    explanation:"Placenta previa is a common cause of painless antepartum hemorrhage."
 },
 
 {
@@ -411,7 +410,7 @@ question:"Which is a danger sign during pregnancy?",
 options:[
 "Mild nausea",
 "Fetal movements",
-  "Severe vaginal bleeding",
+"Severe vaginal bleeding",
 "Weight gain"
 ],
 answer:2,
@@ -489,7 +488,6 @@ options:[
 answer:2,
 explanation:"Normal newborn pulse rate is 120–160 beats per minute."
 },
-
 {
 question:"Which investigation is used to detect fetal anomalies during pregnancy?",
 options:["CT Scan","Ultrasound","X-ray","ECG"],
@@ -517,6 +515,7 @@ options:["30 minutes","1 hour","2 hours","4 hours"],
 answer:2,
 explanation:"The fourth stage consists of the first 2 hours after delivery."
 },
+
 {
 question:"Most common site of uterine rupture?",
 options:["Fundus","Lower uterine segment","Cervix","Cornua"],
@@ -563,7 +562,35 @@ explanation:"Cephalopelvic disproportion is a common indication."
 question:"Most common cause of postpartum hemorrhage?",
 options:["Retained placenta","Uterine atony","Cervical tear","Coagulation disorder"],
 answer:1,
-explanation:"Uterine atony is the leading cause of postpartum hemorrhage."
+explanation:"Uterine atony is the leading cause of PPH."
+},
+
+{
+question:"Antidote for Oxytocin overdose?",
+options:["Calcium Gluconate","Stop Oxytocin infusion","Vitamin K","Magnesium Sulphate"],
+answer:1,
+explanation:"Stop the oxytocin infusion immediately."
+},
+
+{
+question:"APGAR score is assessed at?",
+options:["1 & 5 minutes","10 & 15 minutes","30 minutes","60 minutes"],
+answer:0,
+explanation:"APGAR is assessed at 1 and 5 minutes."
+},
+
+{
+question:"Normal fetal heart rate range?",
+options:["90–120 bpm","100–140 bpm","110–160 bpm","160–200 bpm"],
+answer:2,
+explanation:"Normal fetal heart rate is 110–160 bpm."
+},
+
+{
+question:"Most common fetal malpresentation?",
+options:["Face","Brow","Breech","Shoulder"],
+answer:2,
+explanation:"Breech is the most common malpresentation."
 },
 
 {
@@ -571,6 +598,13 @@ question:"Drug of choice for prevention of eclamptic seizures?",
 options:["Oxytocin","Magnesium Sulphate","Methylergometrine","Calcium Gluconate"],
 answer:1,
 explanation:"Magnesium Sulphate is the drug of choice."
+},
+
+{
+question:"Normal duration of puerperium?",
+options:["2 weeks","4 weeks","6 weeks","8 weeks"],
+answer:2,
+explanation:"Puerperium lasts approximately 6 weeks."
 },
 
 {
@@ -588,213 +622,183 @@ explanation:"A normal placenta weighs about 500 g."
 },
 
 {
-question:"A postpartum woman's uterus is boggy. What should the nurse do first?",
+question:"Best postpartum contraception for a breastfeeding mother?",
 options:[
-"Call physician",
-"Massage the fundus",
-"Administer antibiotics",
-"Insert urinary catheter"
+"Combined Oral Pills",
+"Copper-T (if clinically eligible)",
+"Emergency Contraceptive Pill",
+"Vaginal Ring"
 ],
 answer:1,
-explanation:"A boggy uterus indicates uterine atony. The first nursing action is fundal massage."
+explanation:"A postpartum IUCD (Copper-T), when clinically appropriate, is an effective option."
 },
 
 {
-question:"A woman receiving magnesium sulfate has absent deep tendon reflexes and a respiratory rate of 10/min. What should the nurse do first?",
-options:[
-"Continue infusion",
-"Stop magnesium sulfate",
-"Increase IV fluids",
-"Encourage deep breathing"
-],
-answer:1,
-explanation:"These are signs of magnesium toxicity. Stop the infusion immediately."
+question:"Normal duration of exclusive breastfeeding is?",
+options:["3 months","4 months","6 months","12 months"],
+answer:2,
+explanation:"Exclusive breastfeeding is recommended for the first 6 months."
 },
 
 {
-question:"A client receiving oxytocin develops contractions every 1 minute lasting 100 seconds. What is the nurse's first action?",
-options:[
-"Stop the oxytocin infusion",
-"Increase the infusion rate",
-"Encourage pushing",
-"Place the client flat"
-],
+question:"Normal hemoglobin level in pregnancy is at least?",
+options:["9 g/dL","10 g/dL","11 g/dL","12 g/dL"],
+answer:2,
+explanation:"Hb ≥11 g/dL is considered normal in pregnancy."
+},
+
+{
+question:"The antidote of Magnesium Sulphate toxicity is?",
+options:["Vitamin K","Calcium Gluconate","Oxytocin","Atropine"],
+answer:1,
+explanation:"Calcium Gluconate is the antidote for magnesium toxicity."
+},
+
+{
+question:"Normal fetal lie at term is?",
+options:["Transverse","Oblique","Longitudinal","Unstable"],
+answer:2,
+explanation:"Longitudinal lie is the normal fetal lie."
+},
+
+{
+question:"Which maneuver is used to assess fetal position?",
+options:["Leopold's maneuver","Valsalva maneuver","Heimlich maneuver","Trendelenburg maneuver"],
 answer:0,
-explanation:"Stop oxytocin immediately because uterine tachysystole can reduce fetal oxygenation."
+explanation:"Leopold's maneuvers assess fetal lie, presentation and position."
 },
 
 {
-question:"A pregnant client presents with painful vaginal bleeding, abdominal tenderness, and a rigid uterus. Which condition is most likely?",
-options:[
-"Placenta previa",
-"Placental abruption",
-"Preterm labour",
-"Hydramnios"
-],
+question:"The normal pH of adult blood is?",
+options:["6.8–7.0","7.35–7.45","7.8–8.0","8.5–9.0"],
 answer:1,
-explanation:"Painful bleeding with a rigid uterus is a classic sign of placental abruption."
+explanation:"Normal blood pH is 7.35–7.45."
 },
 
 {
-question:"A client at 32 weeks has BP 170/110 mmHg with severe headache and blurred vision. Which condition is most likely?",
-options:[
-"Gestational hypertension",
-"Severe preeclampsia",
-"Eclampsia",
-"HELLP syndrome"
-],
-answer:1,
-explanation:"Severely elevated BP with headache and visual disturbance suggests severe preeclampsia."
-},
-,
-{
-question:"Normal fetal heart rate during labour is?",
-options:["80–100 bpm","110–160 bpm","170–200 bpm","200–220 bpm"],
-answer:1,
-explanation:"Normal fetal heart rate during labour is 110–160 bpm."
-},
-{
-question:"The strongest risk factor for postpartum hemorrhage is?",
-options:["Uterine atony","Anemia","Hypertension","Diabetes"],
+question:"Most common cause of neonatal mortality?",
+options:["Prematurity","Jaundice","Diarrhea","Asthma"],
 answer:0,
-explanation:"Uterine atony is the most common cause of postpartum hemorrhage."
+explanation:"Prematurity is the leading cause of neonatal mortality."
 },
+
 {
-question:"Which hormone is responsible for milk ejection?",
+question:"Normal platelet count is?",
+options:["50,000–1 lakh","1.5–4 lakh","5–7 lakh","8–10 lakh"],
+answer:1,
+explanation:"Normal platelet count is 1.5–4 lakh/mm³."
+},
+
+{
+question:"Which stage of labour is called the placental stage?",
+options:["First","Second","Third","Fourth"],
+answer:2,
+explanation:"The third stage involves delivery of the placenta."
+},
+
+{
+question:"The normal pulse rate of an adult is?",
+options:["40–60/min","60–100/min","100–140/min","140–180/min"],
+answer:1,
+explanation:"Normal adult pulse is 60–100/min."
+},
+
+{
+question:"Which hormone is responsible for milk let-down reflex?",
 options:["Prolactin","Oxytocin","Estrogen","Progesterone"],
 answer:1,
-explanation:"Oxytocin causes milk let-down (milk ejection reflex)."
+explanation:"Oxytocin causes milk ejection."
 },
+
 {
-question:"Normal newborn heart rate is?",
-options:["60–80/min","80–100/min","120–160/min","180–200/min"],
-answer:2,
-explanation:"Normal heart rate of a healthy newborn is 120–160/min."
-},
-{
-question:"The presenting diameter in a well-flexed vertex presentation is?",
-options:["Occipitofrontal","Suboccipitobregmatic","Mentovertical","Bitemporal"],
+question:"Normal respiratory rate in adults is?",
+options:["8–10/min","12–20/min","24–30/min","30–40/min"],
 answer:1,
-explanation:"Suboccipitobregmatic (9.5 cm) is the presenting diameter."
+explanation:"Normal adult respiratory rate is 12–20/min."
 },
+
 {
-question:"The normal pH of amniotic fluid is?",
-options:["4.5–5.5","6.0–6.5","7.0–7.5","8.0–8.5"],
-answer:2,
-explanation:"Amniotic fluid is slightly alkaline with pH around 7.0–7.5."
-},
-{
-question:"Which drug is used to treat postpartum hemorrhage due to uterine atony?",
-options:["Oxytocin","Diazepam","Heparin","Atropine"],
+question:"The first vaccine given after birth is?",
+options:["BCG","DPT","MMR","OPV Booster"],
 answer:0,
-explanation:"Oxytocin is the first-line drug for uterine atony."
+explanation:"BCG is routinely given at birth."
 },
+
 {
-question:"Quickening is usually felt in primigravida at?",
-options:["8 weeks","12 weeks","18–20 weeks","30 weeks"],
-answer:2,
-explanation:"Quickening is usually felt at 18–20 weeks in primigravida."
-},
-{
-question:"The normal weight gain during pregnancy is approximately?",
-options:["2–4 kg","5–7 kg","10–12 kg","18–20 kg"],
-answer:2,
-explanation:"Average recommended weight gain is about 10–12 kg."
-},
-{
-question:"The first stage of labour ends with?",
-options:["Onset of contractions","Full cervical dilatation","Delivery of baby","Placental expulsion"],
+question:"Iron and folic acid supplementation prevents?",
+options:["Hypertension","Anemia","Diabetes","Asthma"],
 answer:1,
-explanation:"The first stage ends when the cervix is fully dilated."
+explanation:"IFA tablets help prevent iron deficiency anemia."
 },
+
 {
-question:"Which condition is characterized by hypertension, edema and proteinuria?",
-options:["Eclampsia","Preeclampsia","Placenta previa","Hydramnios"],
+question:"Normal body temperature is?",
+options:["35°C","37°C","39°C","40°C"],
 answer:1,
-explanation:"Preeclampsia is characterized by hypertension with proteinuria."
+explanation:"Normal body temperature is approximately 37°C."
 },
+
 {
-question:"The average length of the umbilical cord is?",
-options:["20 cm","35 cm","50 cm","80 cm"],
+question:"Which condition requires immediate treatment in pregnancy?",
+options:["Mild nausea","Severe vaginal bleeding","Backache","Heartburn"],
+answer:1,
+explanation:"Severe vaginal bleeding is an obstetric emergency."
+},
+
+{
+question:"The normal urine output in adults is at least?",
+options:["10 mL/hr","20 mL/hr","30 mL/hr","100 mL/hr"],
 answer:2,
-explanation:"The average umbilical cord length is about 50 cm."
+explanation:"Normal urine output should be at least 30 mL/hour."
 },
+
 {
-question:"Which vitamin should be given to every newborn soon after birth?",
-options:["Vitamin A","Vitamin C","Vitamin D","Vitamin K"],
-answer:3,
+question:"Vitamin K is administered to newborn to prevent?",
+options:["Anemia","Hemorrhage","Jaundice","Sepsis"],
+answer:1,
 explanation:"Vitamin K prevents hemorrhagic disease of the newborn."
 },
+
 {
-question:"Normal duration of the second stage of labour in primigravida is?",
-options:["10–20 min","30–60 min","1–2 hours","3–4 hours"],
-answer:2,
-explanation:"It usually lasts up to 2 hours."
-},
-{
-question:"Which investigation confirms fetal presentation most accurately?",
-options:["Abdominal palpation","Ultrasound","X-ray","Urine test"],
+question:"The strongest uterine muscle layer is?",
+options:["Endometrium","Myometrium","Perimetrium","Decidua"],
 answer:1,
-explanation:"Ultrasound accurately confirms fetal presentation."
+explanation:"The myometrium is the muscular layer of the uterus."
 },
+
 {
-question:"The placenta normally weighs about?",
-options:["250 g","350 g","500 g","700 g"],
-answer:2,
-explanation:"A normal placenta weighs approximately 500 g."
-},
-{
-question:"Which fetal presentation is most common?",
-options:["Breech","Face","Vertex","Shoulder"],
-answer:2,
-explanation:"Vertex presentation is the most common."
-},
-{
-question:"The normal respiratory rate of a newborn is?",
-options:["20–30/min","30–60/min","60–90/min","90–120/min"],
+question:"Which investigation confirms pregnancy most accurately in early weeks?",
+options:["Urine test","Blood beta-hCG","X-ray","CT scan"],
 answer:1,
-explanation:"A healthy newborn breathes 30–60 times per minute."
+explanation:"Blood beta-hCG confirms pregnancy earlier and more accurately."
 },
+
 {
-question:"Which part of the placenta is maternal?",
-options:["Chorion","Amnion","Decidua basalis","Umbilical cord"],
+question:"Normal cervical dilatation at full dilatation is?",
+options:["6 cm","8 cm","10 cm","12 cm"],
 answer:2,
-explanation:"Decidua basalis forms the maternal part of the placenta."
+explanation:"Full cervical dilatation is 10 cm."
 },
+
 {
-question:"Which pelvic type is best for normal vaginal delivery?",
-options:["Android","Anthropoid","Gynecoid","Platypelloid"],
-answer:2,
-explanation:"Gynecoid pelvis is the most favorable for vaginal birth."
-},
-{
-question:"A newborn with an APGAR score of 8 at 1 minute is considered?",
-options:["Severely depressed","Moderately depressed","In good condition","Requires CPR"],
-answer:2,
-explanation:"An APGAR score of 7–10 indicates the baby is in good condition."
-},
-{
-question:"The normal fetal movement count after 28 weeks should be at least?",
-options:["2/day","5/day","10/day","20/day"],
-answer:2,
-explanation:"At least 10 fetal movements in 12 hours is reassuring."
-},
-{
-question:"Which hormone causes uterine contractions during labour?",
-options:["Progesterone","Oxytocin","Relaxin","hCG"],
+question:"The average duration of a menstrual cycle is?",
+options:["21 days","28 days","35 days","40 days"],
 answer:1,
-explanation:"Oxytocin stimulates uterine contractions."
+explanation:"The average menstrual cycle lasts 28 days."
 },
+
 {
-question:"The commonest indication for induction of labour is?",
-options:["Post-term pregnancy","Twins","Breech","Polyhydramnios"],
-answer:0,
-explanation:"Post-term pregnancy is a common indication for induction."
-},
-{
-question:"The best method to prevent neonatal hypothermia is?",
-options:["Immediate bathing","Skin-to-skin contact","Cold sponging","Keeping windows open"],
+question:"The fetal organ primarily responsible for oxygen exchange before birth is?",
+options:["Lungs","Placenta","Liver","Kidney"],
 answer:1,
-explanation:"Skin-to-skin contact helps maintain newborn temperature."
- }
-];  
+explanation:"The placenta provides oxygen and nutrients to the fetus."
+},
+
+{
+question:"The normal birth weight of a term baby is?",
+options:["1 kg","2 kg","2.5–4 kg","5 kg"],
+answer:2,
+explanation:"A normal term newborn weighs approximately 2.5–4 kg."
+}
+
+];
